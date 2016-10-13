@@ -8,8 +8,16 @@
           <!-- This button contains the functions relevant to Section 2 of the code-->
           <menu id="Function" label="Example" keytip="Q" imageMso="HighImportance" tag="WindSpeedIcon" size="large">
             <button id="Hello" label="&amp;Hi There" onAction="FunctionsClick" tag="Hello" />
-          </menu>      
+          </menu>
 
+          <menu id="TerrainProfiler" label="Example" keytip="Q" imageMso="HighImportance" tag="WindSpeedIcon" size="large">
+            <button id="GetTerrainProfile" label="&amp;Hi There" onAction="FunctionsClick" tag="GetTerrainProfile" />
+          </menu>
+
+          <menu id="ArrayResize" label="Example" keytip="Q" imageMso="PrintPreviewClose" tag="WindSpeedIcon" size="large">
+            <button id="MakeMixedArrayAndResize" label="&amp;Hi There" onAction="FunctionsClick" tag="MakeMixedArrayAndResize" />
+          </menu>
+          
         </group>
  
       </tab>
