@@ -1,4 +1,13 @@
-﻿using System.Reflection;
+﻿/* 
+ * TerrainProfiler
+ * https://github.com/peader/TerrainProfiler/
+ * 
+ * Copyright 2016, Peter Mahady
+ * Licensed under the MIT license
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Xml;
 using ExcelDna.Integration.CustomUI;

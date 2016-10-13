@@ -1,4 +1,13 @@
-﻿using System.Collections.Generic;
+﻿/* 
+ * TerrainProfiler
+ * https://github.com/peader/TerrainProfiler/
+ * 
+ * Copyright 2016, Peter Mahady
+ * Licensed under the MIT license
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+using System.Collections.Generic;
 using ExcelDNAExample.Properties;
 using System.Text;
 using System.Xml.Linq;
