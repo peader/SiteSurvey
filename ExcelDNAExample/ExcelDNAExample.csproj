@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncFunctions\AsyncFunctions.cs" />
     <Compile Include="Controls\Ribbon.cs" />
     <Compile Include="ElevationDataAPI\ElevationProfileBase.cs" />
     <Compile Include="ElevationDataAPI\GoolgeMapsElevationProfile.cs" />

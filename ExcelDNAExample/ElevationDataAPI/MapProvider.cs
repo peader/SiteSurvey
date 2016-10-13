@@ -1,8 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/* 
+ * TerrainProfiler
+ * https://github.com/peader/TerrainProfiler/
+ * 
+ * Copyright 2016, Peter Mahady
+ * Licensed under the MIT license
+ * http://www.opensource.org/licenses/mit-license.php
+ */
 
 namespace ElevationDataAPI.TerrainProfiler
 {

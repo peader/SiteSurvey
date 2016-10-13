@@ -14,6 +14,10 @@
             <button id="GetTerrainProfile" label="&amp;Hi There" onAction="FunctionsClick" tag="GetTerrainProfile" />
           </menu>
 
+          <menu id="ArrayResize" label="Example" keytip="Q" imageMso="PrintPreviewClose" tag="WindSpeedIcon" size="large">
+            <button id="MakeMixedArrayAndResize" label="&amp;Hi There" onAction="FunctionsClick" tag="MakeMixedArrayAndResize" />
+          </menu>
+          
         </group>
  
       </tab>

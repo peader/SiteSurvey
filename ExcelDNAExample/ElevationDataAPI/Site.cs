@@ -1,4 +1,13 @@
-﻿using System;
+﻿/* 
+ * TerrainProfiler
+ * https://github.com/peader/TerrainProfiler/
+ * 
+ * Copyright 2016, Peter Mahady
+ * Licensed under the MIT license
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Windows.Media.Media3D;
 
