@@ -3,21 +3,15 @@
   <ribbon>
     <tabs>
       <tab id="SampleFunctions" label="ExcelDNAExample" keytip="S">
-        <group id="ImportGroup" label="Sample Functions">
+        <group id="ImportGroup" label="Sample Functions">        
           
-          <!-- This button contains the functions relevant to Section 2 of the code-->
-          <menu id="Function" label="Example" keytip="Q" imageMso="HighImportance" tag="WindSpeedIcon" size="large">
-            <button id="Hello" label="&amp;Hi There" onAction="FunctionsClick" tag="Hello" />
-          </menu>
+          <menu id="TerrainProfiler" label="TerrainProfiler" keytip="Q" imageMso="FunctionWizard" size="large">
+            <button id="GetTerrainProfile" label="&amp;TerrainProfiler" onAction="FunctionsClick" tag="GetTerrainProfile" />
+          </menu>          
+        </group>
 
-          <menu id="TerrainProfiler" label="Example" keytip="Q" imageMso="HighImportance" tag="WindSpeedIcon" size="large">
-            <button id="GetTerrainProfile" label="&amp;Hi There" onAction="FunctionsClick" tag="GetTerrainProfile" />
-          </menu>
-
-          <menu id="ArrayResize" label="Example" keytip="Q" imageMso="PrintPreviewClose" tag="WindSpeedIcon" size="large">
-            <button id="MakeMixedArrayAndResize" label="&amp;Hi There" onAction="FunctionsClick" tag="MakeMixedArrayAndResize" />
-          </menu>
-          
+        <group id="AboutGroup" label="About">
+          <button id="AboutButton" label="About" keytip="A" onAction="AboutButton_Click" imageMso="TentativeAcceptInvitation" size="large" />
         </group>
  
       </tab>

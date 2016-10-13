@@ -82,5 +82,11 @@ namespace ExcelDNAExample.Controls
             }
         }
 
+
+        public void AboutButton_Click(IRibbonControl control)
+        {
+            new AboutForm().Show();
+        }
+
     }
 }
