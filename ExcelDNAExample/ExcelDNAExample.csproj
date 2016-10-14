@@ -42,6 +42,8 @@
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AsyncFunctions\AsyncFunctions.cs" />
+    <Compile Include="Controls\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AboutForm.designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Ribbon.cs" />
     <Compile Include="ElevationDataAPI\ElevationProfileBase.cs" />
     <Compile Include="ElevationDataAPI\GoolgeMapsElevationProfile.cs" />
@@ -69,6 +77,9 @@
     <Compile Include="VBAInterface\DllRegistry.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controls\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Ribbon.xml" />
     <Content Include="ExcelDNAExample-AddIn.dna">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

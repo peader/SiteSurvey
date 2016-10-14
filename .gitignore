@@ -4,3 +4,5 @@ ExcelDNAExample/bin/Debug/ExcelDNAExample-AddIn64.dna
 ExcelDNAExample/bin/
 .vs/
 packages/
+ExcelDNAExample.Test/bin/
+ExcelDNAExample.Test/obj/
