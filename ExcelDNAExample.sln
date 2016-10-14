@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelDNAExample", "ExcelDNAExample\ExcelDNAExample.csproj", "{9B35C12C-A5F1-4B6A-A6C3-6736E96C7432}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelDNAExample.Test", "ExcelDNAExample.Test\ExcelDNAExample.Test.csproj", "{B8E93BAB-50B3-438C-89E6-80DA338FBE29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9B35C12C-A5F1-4B6A-A6C3-6736E96C7432}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B35C12C-A5F1-4B6A-A6C3-6736E96C7432}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B35C12C-A5F1-4B6A-A6C3-6736E96C7432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8E93BAB-50B3-438C-89E6-80DA338FBE29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E93BAB-50B3-438C-89E6-80DA338FBE29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E93BAB-50B3-438C-89E6-80DA338FBE29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E93BAB-50B3-438C-89E6-80DA338FBE29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
