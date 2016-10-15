@@ -10,6 +10,7 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Media.Media3D;
+using ExcelDNAExample.Math.VectorManipulation;
 
 namespace ElevationDataAPI.TerrainProfiler
 {
@@ -35,12 +36,9 @@ namespace ElevationDataAPI.TerrainProfiler
 
             for (int theta = 0; theta < 180; theta += 10)
             {
-
-                // Using the offset length create an appropriate, rotated, offset unit vector
-                Matrix3D identityMatrix = Matrix3D.Identity;
-                Quaternion q = new Quaternion(new Vector3D(0, 0, 1), theta);
-                identityMatrix.Rotate(q);
-                Vector3D OffsetUnitVector = identityMatrix.Transform(new Vector3D(StepLength, 0, 0));
+                // Rotate the vector normalised along the axis about the z axis by theta to get 
+                // the unit offset vector for this profile      
+                Vector3D OffsetUnitVector = VectorManipulation.RotateAboutZAxis(new Vector3D(StepLength, 0, 0), theta);                    
 
                 // Get the initial position of the elevation profile
                 // This will be the outermost point of the site radius
@@ -72,7 +70,5 @@ namespace ElevationDataAPI.TerrainProfiler
                 throw;             
             }
         }
-
-
     }
 }

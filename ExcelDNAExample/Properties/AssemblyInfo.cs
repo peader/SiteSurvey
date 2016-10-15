@@ -34,3 +34,8 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+
+// IN order to allow the unit test project access the internal classes
+#if DEBUG 
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("ExcelDNAExample.Test")]
+#endif
