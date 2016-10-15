@@ -8,6 +8,7 @@ namespace ExcelDNAExample.Test
         {
             AreEqual(expected.X, actual.X, delta);
             AreEqual(expected.Y, actual.Y, delta);
+            AreEqual(expected.Z, actual.Z, delta);
         }
     }
 }
