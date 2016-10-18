@@ -46,7 +46,8 @@ namespace ElevationDataAPI.TerrainProfiler
                 InitialPosition.X = OffsetUnitVector.X * (-1 * NumberOfSteps);
                 InitialPosition.Y = OffsetUnitVector.Y * (-1 * NumberOfSteps);
 
-
+                // Here we initialise the elevation profile to the relevant subclass depending on 
+                // what is our elevation data source i.e. google maps
                 ElevationProfileBase ElevationProfile = MapProvider.GetProfile(mapDataProvider);
                 // Now we need to intialise this Profile with points relative to the initial position and the offsetunit vector worked out above
                 ElevationProfile.InitiliseProfile(NumberOfSteps, InitialPosition, OffsetUnitVector, lat, lon, theta, StepLength);
