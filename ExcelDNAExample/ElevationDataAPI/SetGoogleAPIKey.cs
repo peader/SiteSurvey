@@ -1,6 +1,7 @@
 ﻿using System;
 using ExcelDNAExample.Properties;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace ElevationDataAPI.TerrainProfiler
 {
@@ -29,6 +30,12 @@ namespace ElevationDataAPI.TerrainProfiler
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
+        }
+
+        private void APIKeyLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LinkLabel label = (LinkLabel)sender;
+            Process.Start(label.Text);
         }
     }
 }
