@@ -7,6 +7,7 @@
           
           <menu id="TerrainProfiler" label="TerrainProfiler" keytip="Q" imageMso="FunctionWizard" size="large">
             <button id="GetTerrainProfile" label="&amp;TerrainProfiler" onAction="FunctionsClick" tag="GetTerrainProfile" />
+            <button id="SetGoogleAPIKey" label="&amp;SetGoogleAPIKey" onAction="SetGoogleAPIKeyButton_Click" tag="SetGoogleAPIKey" />
           </menu>          
         </group>
 

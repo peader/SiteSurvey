@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="APIKey" Type="System.String" Scope="User">
-      <Value Profile="(Default)">AIzaSyAMzOeAwOYmjtpj55q-GEVDPQzi9J5FiUw</Value>
+      <Value Profile="(Default)">Valid API Key not set</Value>
     </Setting>
   </Settings>
 </SettingsFile>

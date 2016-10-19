@@ -60,6 +60,12 @@
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Ribbon.cs" />
+    <Compile Include="ElevationDataAPI\SetGoogleAPIKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElevationDataAPI\SetGoogleAPIKey.designer.cs">
+      <DependentUpon>SetGoogleAPIKey.cs</DependentUpon>
+    </Compile>
     <Compile Include="ElevationDataAPI\ElevationProfileBase.cs" />
     <Compile Include="ElevationDataAPI\GoolgeMapsElevationProfile.cs" />
     <Compile Include="ElevationDataAPI\IElevationProfile.cs" />
@@ -85,6 +91,9 @@
     <Content Include="ExcelDNAExample-AddIn.dna">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="ElevationDataAPI\SetGoogleAPIKey.resx">
+      <DependentUpon>SetGoogleAPIKey.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

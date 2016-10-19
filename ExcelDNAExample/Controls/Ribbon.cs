@@ -19,7 +19,7 @@ namespace ExcelDNAExample.Controls
 
     // Needs to be COM-visible to work
     [ComVisible(true)]
-    public class Ribbon: ExcelDna.Integration.CustomUI.ExcelRibbon
+    public class Ribbon : ExcelDna.Integration.CustomUI.ExcelRibbon
     {
         // The function GetCustomUI loads the xml file into the .dna file i.e. it defines the structure of the custom tabs in excel
         public override string GetCustomUI(string uiName)
@@ -70,7 +70,7 @@ namespace ExcelDNAExample.Controls
                         break;
                     default:
                         activeCell.Formula += "+" + control.Tag + "()";
-                        
+
                         break;
                 }
             }
@@ -86,6 +86,11 @@ namespace ExcelDNAExample.Controls
         public void AboutButton_Click(IRibbonControl control)
         {
             new AboutForm().Show();
+        }
+
+        public void SetGoogleAPIKeyButton_Click(IRibbonControl control)
+        {
+            new ElevationDataAPI.TerrainProfiler.SetGoogleAPIKey().Show();
         }
 
     }

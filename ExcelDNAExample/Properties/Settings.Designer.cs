@@ -25,7 +25,7 @@ namespace ExcelDNAExample.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("AIzaSyAMzOeAwOYmjtpj55q-GEVDPQzi9J5FiUw")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Valid API Key not set")]
         public string APIKey {
             get {
                 return ((string)(this["APIKey"]));
