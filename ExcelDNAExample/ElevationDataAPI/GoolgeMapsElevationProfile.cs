@@ -71,9 +71,20 @@ namespace ElevationDataAPI.TerrainProfiler
                     string responseFromServer = reader.ReadToEnd();
                     // Parse the response from the server
                     var responseFromServerXML = XDocument.Parse(responseFromServer);
+                    // Check the status of the reponse before validating it
+                    string status = responseFromServerXML.Root.Element("status").Value.ToString();
+                    // if there is no data available we assign the elevations as NaN and skip to the next iteration
+                    if (status.ToLower() == "data_not_available") {
+                        foreach (var result in responseFromServerXML.Root.Elements("result"))
+                        {
+                            this[i].elevation = double.NaN;
+                            i++;
+                        }
+                        continue;
+                    }
 
                     //Validate web request
-                    this.ValidateWebRequest(responseFromServerXML);
+                    this.CheckWebRequestForErrors(responseFromServerXML);
 
                     foreach (var result in responseFromServerXML.Root.Elements("result"))
                     {
@@ -100,7 +111,7 @@ namespace ElevationDataAPI.TerrainProfiler
 
         // @responseXMLFromServer the xml returned from the server after the web requests was sent
         // Checks that a valid connection can be made to the google server 
-        internal void ValidateWebRequest(XDocument responseXMLFromServer)
+        internal void CheckWebRequestForErrors(XDocument responseXMLFromServer)
         {
             string status = responseXMLFromServer.Root.Element("status").Value.ToString();
             if (status.ToLower() != "ok")

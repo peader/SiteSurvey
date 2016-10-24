@@ -62,7 +62,8 @@ namespace ExcelDNAExample.Functions
                         result[rowCounter, 2] = position.longitude;
                         result[rowCounter, 3] = position.Xoffset;
                         result[rowCounter, 4] = position.Yoffset;
-                        result[rowCounter, 5] = position.elevation;
+                        result[rowCounter, 5] = (double.IsNaN(position.elevation)) ? "NaN" : position.elevation.ToString();
+
                         rowCounter++;
 
                     }

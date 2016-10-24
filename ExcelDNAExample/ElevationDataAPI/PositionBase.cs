@@ -22,7 +22,7 @@ namespace ElevationDataAPI.TerrainProfiler
 
         public override string ToString()
         {
-            return this.latitude.ToString() + "," + this.longitude.ToString() + "|";
+            return this.latitude.ToString("F99").TrimEnd("0".ToCharArray()) + "," + this.longitude.ToString("F99").TrimEnd("0".ToCharArray()) + "|";
         }
     }
 
