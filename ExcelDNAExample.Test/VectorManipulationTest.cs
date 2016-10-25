@@ -41,6 +41,30 @@ namespace ExcelDNAExample.Test
             VectorAssert.AreEqual(expected, actual, 0.0001);
         }
 
+        [Test]
+        public void TestTranslateAlongYAxisPositive()
+        {
+            Vector3D expected = new Vector3D(5, 10, 5);
+            Vector3D actual = VectorManipulation.TranslateAlongYAxis(new Vector3D(5, 5, 5), 5);
+            VectorAssert.AreEqual(expected, actual, 0.0001);
+        }
+
+        [Test]
+        public void TestTranslateAlongYAxisNegative()
+        {
+            Vector3D expected = new Vector3D(5, 0, 5);
+            Vector3D actual = VectorManipulation.TranslateAlongYAxis(new Vector3D(5, 5, 5), -5);
+            VectorAssert.AreEqual(expected, actual, 0.0001);
+        }
+
+        [Test]
+        public void TestTranslateAlongYAxisNoTranslation()
+        {
+            Vector3D expected = new Vector3D(5, 5, 5);
+            Vector3D actual = VectorManipulation.TranslateAlongYAxis(new Vector3D(5, 5, 5), 0);
+            VectorAssert.AreEqual(expected, actual, 0.0001);
+        }
+
     }
 
 
