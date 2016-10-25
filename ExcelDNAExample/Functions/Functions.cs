@@ -37,6 +37,7 @@ namespace ExcelDNAExample.Functions
         {
             try
             {
+                if (ExcelDnaUtil.IsInFunctionWizard()) return "Finish inputting parameters";
                 // Generate and retrieve all the required data for the user inputted site
                 Site testsite = new Site(lat, lon, "google");
                 testsite.GenerateRadial(siteRadius, stepLength, stepAngle);
@@ -90,6 +91,7 @@ namespace ExcelDNAExample.Functions
         {
             try
             {
+                if (ExcelDnaUtil.IsInFunctionWizard()) return "Finish inputting parameters";
                 // Generate and retrieve all the required data for the user inputted site
                 Site testsite = new Site(lat, lon, "google");
                 testsite.GenerateGrid(gridLength, steplength);
