@@ -40,39 +40,39 @@ namespace ExcelDNAExample.Test
             pos5.longitude = -0.00001;
         }
 
-        [Test]
-        public void TestGetEncodedPolylineAlgorithmFormatGoogleSampleValues()
-        {
-            string actual = pos1.GetEncodedPolylineAlgorithmFormat(null);
-            string expected = "_p~iF~ps|U";
-            Assert.AreEqual(expected, actual);
-
-            actual = pos2.GetEncodedPolylineAlgorithmFormat(pos1);
-            expected = "_ulLnnqC";
-            Assert.AreEqual(expected, actual);
-
-            actual = pos3.GetEncodedPolylineAlgorithmFormat(pos2);
-            expected = "_mqNvxq`@";
-            Assert.AreEqual(expected, actual);
-        }
-
-        [Test]
-        public void TestGetEncodedPolylineAlgorithmFormatGoogleZeroPosition()
-        {
-            string actual = pos4.GetEncodedPolylineAlgorithmFormat(null);
-            string expected = "??";
-            Assert.AreEqual(expected, actual);
-
-        }
-
-        [Test]
-        public void TestGetEncodedPolylineAlgorithmFormatGooglePositionWithEscapeCharacter()
-        {
-            string actual = pos5.GetEncodedPolylineAlgorithmFormat(null);
-            string expected = "\\@";
-            Assert.AreEqual(expected, actual);
-
-        }
+       //[Test]
+       //public void TestGetEncodedPolylineAlgorithmFormatGoogleSampleValues()
+       //{
+       //    string actual = pos1.GetEncodedPolylineAlgorithmFormat(null);
+       //    string expected = "_p~iF~ps|U";
+       //    Assert.AreEqual(expected, actual);
+       //
+       //    actual = pos2.GetEncodedPolylineAlgorithmFormat(pos1);
+       //    expected = "_ulLnnqC";
+       //    Assert.AreEqual(expected, actual);
+       //
+       //    actual = pos3.GetEncodedPolylineAlgorithmFormat(pos2);
+       //    expected = "_mqNvxq`@";
+       //    Assert.AreEqual(expected, actual);
+       //}
+       //
+       //[Test]
+       //public void TestGetEncodedPolylineAlgorithmFormatGoogleZeroPosition()
+       //{
+       //    string actual = pos4.GetEncodedPolylineAlgorithmFormat(null);
+       //    string expected = "??";
+       //    Assert.AreEqual(expected, actual);
+       //
+       //}
+       //
+       //[Test]
+       //public void TestGetEncodedPolylineAlgorithmFormatGooglePositionWithEscapeCharacter()
+       //{
+       //    string actual = pos5.GetEncodedPolylineAlgorithmFormat(null);
+       //    string expected = "\\@";
+       //    Assert.AreEqual(expected, actual);
+       //
+       //}
 
 
     }
