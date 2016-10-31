@@ -1,5 +1,5 @@
-<DnaLibrary Name="ExcelDNAExample Add-In" RuntimeVersion="v4.0">
-  <ExternalLibrary Path="ExcelDNAExample.dll" LoadFromBytes="true" Pack="true" />
+<DnaLibrary Name="SiteSurvey Add-In" RuntimeVersion="v4.0">
+  <ExternalLibrary Path="SiteSurvey.dll" LoadFromBytes="true" Pack="true" />
   
   <!-- 
        The RuntimeVersion attribute above allows two settings:
