@@ -33,13 +33,17 @@ namespace ExcelDNAExample.Functions
         [ExcelFunction(Name = "GetRadialTerrainProfile",
         Description = "Returns a radial terrain profile",
         Category = "ExcelDNAExample")]
-        public static object GetRadialTerrainProfile(string lat, string lon, double siteRadius, double stepLength, double stepAngle)
+        public static object GetRadialTerrainProfile([ExcelArgument(Description = "Valid Inputs - any value between -90 and 90")] string lattitude,
+                                                     [ExcelArgument(Description = "Valid Inputs - any value between -180 and 180")] string longitude,
+                                                     [ExcelArgument(Description = "Valid Inputs - any value > than 0 Note: Units in metres")] double siteRadius,
+                                                     [ExcelArgument(Description = "Valid Inputs - any value > than 0 Note: Units in metres")] double stepLength,
+                                                     [ExcelArgument(Description = "Valid Inputs - any value between 0 and 180")]double stepAngle)
         {
             try
             {
                 if (ExcelDnaUtil.IsInFunctionWizard()) return "Finish inputting parameters";
                 // Generate and retrieve all the required data for the user inputted site
-                Site testsite = new Site(lat, lon, "google");
+                Site testsite = new Site(lattitude, longitude, "google");
                 testsite.GenerateRadial(siteRadius, stepLength, stepAngle);
 
                 int rows = (testsite.Count * testsite[0].Count) + 1;
@@ -87,13 +91,16 @@ namespace ExcelDNAExample.Functions
         [ExcelFunction(Name = "GetGridTerrainProfile",
         Description = "Returns a grid terrain profile",
         Category = "ExcelDNAExample")]
-        public static object GetGridTerrainProfile(string lat, string lon, double gridLength, double steplength)
+        public static object GetGridTerrainProfile([ExcelArgument(Description = "Valid Inputs - any value between -90 and 90")] string lattitude,
+                                                   [ExcelArgument(Description = "Valid Inputs - any value between -180 and 180")]string longitude,
+                                                   [ExcelArgument(Description = "A square grid of equal length. gridLength is the length of one side of the grid in metres")]double gridLength,
+                                                   [ExcelArgument(Description = "Valid Inputs - any value > than 0 Note: Units in metres")]double steplength)
         {
             try
             {
                 if (ExcelDnaUtil.IsInFunctionWizard()) return "Finish inputting parameters";
                 // Generate and retrieve all the required data for the user inputted site
-                Site testsite = new Site(lat, lon, "google");
+                Site testsite = new Site(lattitude, longitude, "google");
                 testsite.GenerateGrid(gridLength, steplength);
 
                 int rows = (testsite.Count * testsite[0].Count) + 1;
