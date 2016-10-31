@@ -2,10 +2,10 @@
 <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" loadImage="LoadImage">
   <ribbon>
     <tabs>
-      <tab id="SampleFunctions" label="ExcelDNAExample" keytip="S">
-        <group id="ImportGroup" label="Sample Functions">        
+      <tab id="SurveyFunctions" label="SiteSurvey" keytip="S">
+        <group id="ImportGroup" label="Survey Functions">        
           
-          <menu id="TerrainProfiler" label="TerrainProfiler" keytip="Q" imageMso="FunctionWizard" size="large">
+          <menu id="SiteSurvey" label="SiteSurvey" keytip="Q" imageMso="FunctionWizard" size="large">
             <button id="GetRadialTerrainProfile" label="&amp;RadialTerrainProfiler" onAction="FunctionsClick" tag="GetRadialTerrainProfile" />
             <button id="GetGridTerrainProfile" label="&amp;GridTerrainProfiler" onAction="FunctionsClick" tag="GetGridTerrainProfile" />
             <button id="SetGoogleAPIKey" label="&amp;SetGoogleAPIKey" onAction="SetGoogleAPIKeyButton_Click" tag="SetGoogleAPIKey" />
