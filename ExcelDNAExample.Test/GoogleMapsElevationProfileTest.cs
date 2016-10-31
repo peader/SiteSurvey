@@ -37,6 +37,7 @@ namespace ExcelDNAExample.Test
             testThreeProfilePosition.longitude = -0.000000000000000000997330311802182;
             testThreeProfile.Add(testThreeProfilePosition);
 
+
             testFourProfile = new GoogleMapsElevationProfile();
             Position pos1 = new Position();
             pos1.latitude = 38.5;
@@ -83,26 +84,32 @@ namespace ExcelDNAExample.Test
         {
             testThreeProfile.GetElevationData();
             double actual = testThreeProfile[0].elevation;
-            double expected = double.NaN;
-            Assert.AreEqual(expected, actual);
+            double expected = -3554.390;
+            Assert.AreEqual(expected, actual, 0.001);
         }
 
         [Test]
         public void TestDataGoogleExampleResponseFromServer()
         {
             testFourProfile.GetElevationData();
-            //double actual = testThreeProfile[0].elevation;
-            //double expected = double.NaN;
-            //Assert.AreEqual(expected, actual);
+            double actual = testFourProfile[0].elevation;
+            double expected = 1200.000;
+            Assert.AreEqual(expected, actual, 0.001);
+            actual = testFourProfile[1].elevation;
+            expected = 1691.376;
+            Assert.AreEqual(expected, actual, 0.001);
+            actual = testFourProfile[2].elevation;
+            expected = -2984.855;
+            Assert.AreEqual(expected, actual, 0.001);
         }
 
         [Test]
         public void TestDataEncodedEscapeCharactersResponseFromServer()
         {
             testFiveProfile.GetElevationData();
-            //double actual = testThreeProfile[0].elevation;
-            //double expected = double.NaN;
-            //Assert.AreEqual(expected, actual);
+            double actual = testFiveProfile[0].elevation;
+            double expected = -3493.563;
+            Assert.AreEqual(expected, actual, 0.001);            
         }
 
 

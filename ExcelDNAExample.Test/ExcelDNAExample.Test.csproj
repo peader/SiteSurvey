@@ -46,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GoogleMapsElevationProfileTest.cs" />
-    <Compile Include="PositionBaseTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VectorAssert.cs" />
     <Compile Include="VectorManipulationTest.cs" />
