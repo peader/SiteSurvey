@@ -7,6 +7,9 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
+using System;
+using System.Text;
+
 namespace ElevationDataAPI.TerrainProfiler
 {
     public class Position
@@ -24,6 +27,7 @@ namespace ElevationDataAPI.TerrainProfiler
         {
             return this.latitude.ToString("F99").TrimEnd("0".ToCharArray()) + "," + this.longitude.ToString("F99").TrimEnd("0".ToCharArray()) + "|";
         }
+
     }
 
 
