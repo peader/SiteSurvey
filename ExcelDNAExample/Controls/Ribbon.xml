@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" loadImage="LoadImage">
+  <ribbon>
+    <tabs>
+      <tab id="SurveyFunctions" label="SiteSurvey" keytip="S">
+        <group id="ImportGroup" label="Survey Functions">        
+          
+          <menu id="SiteSurvey" label="SiteSurvey" keytip="Q" imageMso="FunctionWizard" size="large">
+            <button id="GetRadialTerrainProfile" label="&amp;RadialTerrainProfiler" onAction="FunctionsClick" tag="GetRadialTerrainProfile" />
+            <button id="GetGridTerrainProfile" label="&amp;GridTerrainProfiler" onAction="FunctionsClick" tag="GetGridTerrainProfile" />
+            <button id="SetGoogleAPIKey" label="&amp;SetGoogleAPIKey" onAction="SetGoogleAPIKeyButton_Click" tag="SetGoogleAPIKey" />
+          </menu>          
+        </group>
+
+        <group id="AboutGroup" label="About">
+          <button id="AboutButton" label="About" keytip="A" onAction="AboutButton_Click" imageMso="TentativeAcceptInvitation" size="large" />
+        </group>
+ 
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
