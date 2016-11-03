@@ -1,6 +1,6 @@
 ﻿/* 
- * TerrainProfiler
- * https://github.com/peader/TerrainProfiler/
+ * SiteSurvey
+ * https://github.com/peader/SiteSurvey/
  * 
  * Copyright 2016, Peter Mahady
  * Licensed under the MIT license

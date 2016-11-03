@@ -1,4 +1,13 @@
-﻿using System.Windows.Media.Media3D;
+﻿/* 
+ * SiteSurvey
+ * https://github.com/peader/SiteSurvey/
+ * 
+ * Copyright 2016, Peter Mahady
+ * Licensed under the MIT license
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+using System.Windows.Media.Media3D;
 
 namespace ExcelDNAExample.Math.VectorManipulation
 {
