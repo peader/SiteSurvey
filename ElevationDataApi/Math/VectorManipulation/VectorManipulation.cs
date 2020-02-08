@@ -7,29 +7,27 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-using System.Windows.Media.Media3D;
+using System.Numerics;
 
-namespace ExcelDNAExample.Math.VectorManipulation
+namespace ElevationDataAPI.VectorManipulation
 {
-    internal class VectorManipulation
+    public class VectorManipulation
     {
         // @vectorToBeRotated a real vector in 3d space
         // @theta the angle of rotation in degrees
         // @return vectorToBeRotated rotated "theta" degrees about the Z axis
-        internal static Vector3D RotateAboutZAxis(Vector3D vectorToBeRotated, double theta)
+        public static Vector3 RotateAboutZAxis(Vector3 vectorToBeRotated, float theta)
         {
-            Matrix3D identityMatrix = Matrix3D.Identity;
-            Quaternion q = new Quaternion(new Vector3D(0, 0, 1), theta);
-            identityMatrix.Rotate(q);
-            return identityMatrix.Transform(vectorToBeRotated); ;
+            var rotationMATIRX = Matrix4x4.CreateRotationZ(theta);
+            return Vector3.Transform(vectorToBeRotated, rotationMATIRX);
         }
 
         // @vectorToTranlated a real vector in 3d space
         // @distance the distance of the translation
         // @return returnVector translated distance along y axis
-        internal static Vector3D TranslateAlongYAxis(Vector3D vectorToTranlated, double distance)
+        public static Vector3 TranslateAlongYAxis(Vector3 vectorToTranlated, float distance)
         {
-            Vector3D returnVector = new Vector3D();
+            Vector3 returnVector = new Vector3();
             returnVector = vectorToTranlated;
             returnVector.Y += distance;
             return returnVector;

@@ -7,8 +7,8 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
+using System.Configuration;
 using System.Collections.Generic;
-using ExcelDNAExample.Properties;
 using System.Text;
 using System.Xml.Linq;
 using System.Net;
@@ -17,7 +17,7 @@ using System;
 
 namespace ElevationDataAPI.TerrainProfiler
 {
-    internal class GoogleMapsElevationProfile: ElevationProfileBase
+    public class GoogleMapsElevationProfile: ElevationProfileBase
     {
         private List<string> _APIStrings = new List<string>();
         private List<string> APIStrings { get { return this._APIStrings; } }
@@ -40,7 +40,7 @@ namespace ElevationDataAPI.TerrainProfiler
                 var i = APIString.ToString().LastIndexOf('|');
                 //Remove the last "|" from the string before adding the API key data
                 APIString = APIString.Remove(i, 1);
-                APIString.Append("&key=" + Settings.Default.APIKey);
+                APIString.Append("&key=" + Settings.GoogleApiKey);
                 // Add this api string to the list
                 _APIStrings.Add(APIString.ToString());
 
@@ -55,7 +55,7 @@ namespace ElevationDataAPI.TerrainProfiler
         // https://developers.google.com/maps/documentation/utilities/polylinealgorithm
         private void buildEncodedGoogleAPIStrings()
         {
-            string endOfRequest = "&key=" + Settings.Default.APIKey;
+            string endOfRequest = "&key=" + Settings.GoogleApiKey;
             int index = 0;
             while (index <= this.Count - 1)
             {

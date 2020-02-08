@@ -7,9 +7,9 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-using System;
 using System.Collections.Generic;
-using System.Windows.Media.Media3D;
+using System.Numerics;
+using System;
 
 namespace ElevationDataAPI.TerrainProfiler
 {
@@ -23,7 +23,7 @@ namespace ElevationDataAPI.TerrainProfiler
         // @theta - The angle to the horizontal "E-W" of the profile being intilised
         // @stepLength - The incremental step length along the profile being used
         // Initialise the Elevation profile for a given angle to the horizontal with a list of Position objects
-        internal void InitiliseProfile(double numberOfSteps, Vector3D initialPosition, Vector3D offsetUnitVector,  double lat,
+        internal void InitiliseProfile(double numberOfSteps, Vector3 initialPosition, Vector3 offsetUnitVector,  double lat,
                                       double lon, double theta, double stepLength)
         {
 
@@ -35,7 +35,7 @@ namespace ElevationDataAPI.TerrainProfiler
 
             for (int j = 0; j <= (2 * numberOfSteps); j++)
             {
-                Vector3D CurrentPosition = new Vector3D(0, 0, 0);
+                Vector3 CurrentPosition = new Vector3(0, 0, 0);
                 Position temp = new Position();
                 CurrentPosition += initialPosition + (offsetUnitVector * j);
 

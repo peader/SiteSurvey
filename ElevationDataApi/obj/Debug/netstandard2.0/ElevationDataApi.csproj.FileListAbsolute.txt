@@ -1,0 +1,5 @@
+C:\Development\SiteSurvey\ElevationDataApi\obj\Debug\netstandard2.0\ElevationDataApi.csprojAssemblyReference.cache
+C:\Development\SiteSurvey\ElevationDataApi\obj\Debug\netstandard2.0\ElevationDataAPI.TerrainProfiler.SetGoogleAPIKey.resources
+C:\Development\SiteSurvey\ElevationDataApi\obj\Debug\netstandard2.0\ElevationDataApi.csproj.GenerateResource.cache
+C:\Development\SiteSurvey\ElevationDataApi\obj\Debug\netstandard2.0\ElevationDataApi.AssemblyInfoInputs.cache
+C:\Development\SiteSurvey\ElevationDataApi\obj\Debug\netstandard2.0\ElevationDataApi.AssemblyInfo.cs

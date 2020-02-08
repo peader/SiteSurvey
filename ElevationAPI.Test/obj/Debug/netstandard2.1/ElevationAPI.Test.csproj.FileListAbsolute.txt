@@ -1,0 +1,11 @@
+C:\Development\SiteSurvey\ElevationAPI.Test\bin\Debug\netstandard2.1\ElevationAPI.Test.deps.json
+C:\Development\SiteSurvey\ElevationAPI.Test\bin\Debug\netstandard2.1\ElevationAPI.Test.dll
+C:\Development\SiteSurvey\ElevationAPI.Test\obj\Debug\netstandard2.1\ElevationAPI.Test.csprojAssemblyReference.cache
+C:\Development\SiteSurvey\ElevationAPI.Test\obj\Debug\netstandard2.1\ElevationAPI.Test.AssemblyInfoInputs.cache
+C:\Development\SiteSurvey\ElevationAPI.Test\obj\Debug\netstandard2.1\ElevationAPI.Test.AssemblyInfo.cs
+C:\Development\SiteSurvey\ElevationAPI.Test\bin\Debug\netstandard2.1\ElevationAPI.Test.pdb
+C:\Development\SiteSurvey\ElevationAPI.Test\bin\Debug\netstandard2.1\ElevationDataAPI.dll
+C:\Development\SiteSurvey\ElevationAPI.Test\bin\Debug\netstandard2.1\ElevationDataAPI.pdb
+C:\Development\SiteSurvey\ElevationAPI.Test\obj\Debug\netstandard2.1\ElevationAPI.Test.csproj.CopyComplete
+C:\Development\SiteSurvey\ElevationAPI.Test\obj\Debug\netstandard2.1\ElevationAPI.Test.dll
+C:\Development\SiteSurvey\ElevationAPI.Test\obj\Debug\netstandard2.1\ElevationAPI.Test.pdb

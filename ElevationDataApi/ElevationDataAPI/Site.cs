@@ -9,8 +9,8 @@
 
 using System;
 using System.Collections.Generic;
-using System.Windows.Media.Media3D;
-using ExcelDNAExample.Math.VectorManipulation;
+using System.Numerics;
+using ElevationDataAPI.VectorManipulation;
 
 namespace ElevationDataAPI.TerrainProfiler
 {
@@ -38,21 +38,21 @@ namespace ElevationDataAPI.TerrainProfiler
         //  @ angle of section 
         //  populates a site with late long and elevation data 
         //  
-        public void GenerateRadial(double siteRadius, double steplength, double angleOfSection)
+        public void GenerateRadial(float siteRadius, float steplength, float angleOfSection)
         {
             try
             {
-                double NumberOfSteps = siteRadius / steplength;
+                float NumberOfSteps = siteRadius / steplength;
 
-                for (double theta = 0; theta < 180; theta += angleOfSection)
+                for (float theta = 0; theta < 180; theta += angleOfSection)
                 {
                     // Rotate the vector normalised along the axis about the z axis by theta to get 
                     // the unit offset vector for this profile      
-                    Vector3D OffsetUnitVector = VectorManipulation.RotateAboutZAxis(new Vector3D(steplength, 0, 0), theta);
+                    Vector3 OffsetUnitVector = VectorManipulation.VectorManipulation.RotateAboutZAxis(new Vector3(steplength, 0, 0), theta);
 
                     // Get the initial position of the elevation profile
                     // This will be the outermost point of the site radius
-                    Vector3D InitialPosition = new Vector3D(0, 0, 0);
+                    Vector3 InitialPosition = new Vector3(0, 0, 0);
                     InitialPosition.X = OffsetUnitVector.X * (-1 * NumberOfSteps);
                     InitialPosition.Y = OffsetUnitVector.Y * (-1 * NumberOfSteps);
 
@@ -88,22 +88,22 @@ namespace ElevationDataAPI.TerrainProfiler
         //  @ param steplength must be > 0
         //  populates a site with late long and elevation data 
         //  
-        public void GenerateGrid(double gridlength, double steplength)
+        public void GenerateGrid(float gridlength, float steplength)
         {
             try
             {
 
-                double NumberOfSteps = (gridlength/2) / steplength;
+                float NumberOfSteps = (gridlength/2) / steplength;
 
-                for (double step=(-gridlength/2); step <= (gridlength/2); step += steplength)
+                for (float step=(-gridlength/2); step <= (gridlength/2); step += steplength)
                 {
                     // Rotate the vector normalised along the axis about the z axis by theta to get 
                     // the unit offset vector for this profile      
-                    Vector3D OffsetUnitVector = new Vector3D(steplength, 0, 0);
+                    Vector3 OffsetUnitVector = new Vector3(steplength, 0, 0);
 
                     // Get the initial position of the elevation profile
                     // This will be the outermost point of the grid at this profile step
-                    Vector3D InitialPosition = new Vector3D(0, 0, 0);
+                    Vector3 InitialPosition = new Vector3(0, 0, 0);
                     InitialPosition.X = OffsetUnitVector.X * (-1 * NumberOfSteps);
                     InitialPosition.Y = OffsetUnitVector.Y + step;
 
