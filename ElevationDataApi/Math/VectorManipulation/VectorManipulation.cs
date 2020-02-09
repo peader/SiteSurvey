@@ -7,6 +7,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
+using System;
 using System.Numerics;
 
 namespace ElevationDataAPI.VectorManipulation
@@ -18,8 +19,9 @@ namespace ElevationDataAPI.VectorManipulation
         // @return vectorToBeRotated rotated "theta" degrees about the Z axis
         public static Vector3 RotateAboutZAxis(Vector3 vectorToBeRotated, float theta)
         {
-            var rotationMATIRX = Matrix4x4.CreateRotationZ(theta);
-            return Vector3.Transform(vectorToBeRotated, rotationMATIRX);
+            var thetaInRadians = Convert.ToSingle(Math.PI * theta / 180.0);
+            var rotationQuarternion = Quaternion.CreateFromAxisAngle(new Vector3(0,0,1), thetaInRadians);
+            return Vector3.Transform(vectorToBeRotated, rotationQuarternion);
         }
 
         // @vectorToTranlated a real vector in 3d space
