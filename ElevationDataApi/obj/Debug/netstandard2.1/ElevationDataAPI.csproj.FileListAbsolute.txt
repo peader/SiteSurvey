@@ -1,4 +1,3 @@
-C:\Development\SiteSurvey\ElevationDataApi\obj\Debug\netstandard2.1\ElevationDataAPI.csprojAssemblyReference.cache
 C:\Development\SiteSurvey\ElevationDataApi\obj\Debug\netstandard2.1\ElevationDataAPI.AssemblyInfoInputs.cache
 C:\Development\SiteSurvey\ElevationDataApi\obj\Debug\netstandard2.1\ElevationDataAPI.AssemblyInfo.cs
 C:\Development\SiteSurvey\ElevationDataApi\bin\Debug\netstandard2.1\ElevationDataAPI.deps.json
@@ -6,3 +5,4 @@ C:\Development\SiteSurvey\ElevationDataApi\bin\Debug\netstandard2.1\ElevationDat
 C:\Development\SiteSurvey\ElevationDataApi\bin\Debug\netstandard2.1\ElevationDataAPI.pdb
 C:\Development\SiteSurvey\ElevationDataApi\obj\Debug\netstandard2.1\ElevationDataAPI.dll
 C:\Development\SiteSurvey\ElevationDataApi\obj\Debug\netstandard2.1\ElevationDataAPI.pdb
+C:\Development\SiteSurvey\ElevationDataApi\obj\Debug\netstandard2.1\ElevationDataAPI.csprojAssemblyReference.cache

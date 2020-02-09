@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Development\\SiteSurvey\\ElevationDataApi\\ElevationDataApi.csproj",
-      "projectName": "ElevationDataApi",
-      "projectPath": "C:\\Development\\SiteSurvey\\ElevationDataApi\\ElevationDataApi.csproj",
+      "projectUniqueName": "C:\\Development\\SiteSurvey\\ElevationDataApi\\ElevationDataAPI.csproj",
+      "projectName": "ElevationDataAPI",
+      "projectPath": "C:\\Development\\SiteSurvey\\ElevationDataApi\\ElevationDataAPI.csproj",
       "packagesPath": "C:\\Users\\Peter\\.nuget\\packages\\",
       "outputPath": "C:\\Development\\SiteSurvey\\ElevationDataApi\\obj\\",
       "projectStyle": "PackageReference",

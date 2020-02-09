@@ -1,5 +1,5 @@
 ﻿using ExcelDNAExample.Properties;
-namespace ExcelDNAExample.Controls
+namespace ElevationDataAPI.TerrainProfiler
 {
     partial class SetGoogleAPIKey
     {
